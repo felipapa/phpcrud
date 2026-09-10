@@ -1,3 +1,8 @@
+body{
+    background-color: #FFECE3;
+}
+
+
 .form{
     display: flex;
     flex-direction: column;
@@ -6,13 +11,15 @@
     width: 300px;
     gap: 10px;
     padding: 10px;
-    background-color: #f8b89a;
+    background-color: #ffece3;
     margin: 5px;
     border-radius: 8px;
+    border: 2px solid #0000000b;
 }
 .res{
     padding: 5px;
     margin: 3px;
+    width: 300px;
     border-radius: 6px;
     color: white;
     background-color: lightgreen;
@@ -42,14 +49,83 @@ label{
 
 
 .producto{
+    padding: 10px;
+    background-color: #ffece3;
+    margin: 5px;
+    border-radius: 20px;
+    border: 2px solid #0000000b;
+
+
+}
+
+.palabrafacheratitular{
+    background-color: rgba(249,224,224);
+    height: 40px;
+    width: 100px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid #0000000b;
+    border-radius: 10px;
+}
+
+.palabrafachera2{
+    border: 2px solid #0000000b;
+
+    background-color: rgba(249,224,224);
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.palabrafachera3{
+    border: 2px solid #0000000b;
+    background-color: rgba(249,224,224);
+    height: 50px;
     padding: 10px;
-    background-color: #f8b89a;
-    margin: 5px;
-    border-radius: 8px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+
+
+.palabrafachera{
+    border: 2px solid #0000000b;
+
+    background-color: rgba(249,224,224);
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.link{
+    margin-left: 2px;
+    background-color: rgba(249,224,224);
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #0000000b;
+
+
+
+}
+
+.link1{
+    background-color: rgba(249,224,224);
+    width: 60px;
+    height: 40px;    
+    margin-right: 4px;
+    border-radius: 10px;
+    border: 2px solid #0000000b;
+
 
 }
 
