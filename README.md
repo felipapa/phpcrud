@@ -29,5 +29,3 @@ flowchart TD
     O --> P[Redirección al index]
     P --> C
 ```
-
-Los usuarios normales pueden ver los productos. Los usuarios con rol `admin` también pueden agregar, editar y eliminar productos.
