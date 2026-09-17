@@ -1,26 +1,24 @@
 <?php
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+require "auth.php";
+es_admin();
 
 require "conexion.php";
 
 $id = $_GET["id"];
 
-
 $consulta = $conexion->prepare("SELECT * FROM productos WHERE id = :id");
 $consulta->execute([
     ':id' => $id
-
-
 ]);
-
- 
 
 $producto = $consulta->fetch();
 
 ?>
+<?php require "encabezado.php"; ?>
 
 <h2>Modificar producto</h2>
 <form class="form" action="actualizar.php" method="POST">
@@ -33,3 +31,5 @@ $producto = $consulta->fetch();
     <input type="number" name="precio" id="precio" step="0.01" value="<?= $producto["precio"]; ?>" required>
     <button class="btn-submit" type="submit">Editar</button>
 </form>
+
+<?php require "pie.php"; ?>

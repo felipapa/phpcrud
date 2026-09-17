@@ -1,5 +1,8 @@
 <?php
 
+require "auth.php";
+es_admin();
+
 require "conexion.php";
 
 $nombre = $_POST['nombre'];
@@ -17,6 +20,7 @@ $consulta->execute([
     ':precio' => $precio
 ]);
 
-header("Location: index.php?gua=ok")
+header("Location: index.php?gua=ok");
+exit();
 
 ?>
